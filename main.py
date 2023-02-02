@@ -161,13 +161,17 @@ def post_info(patient: Patient):
 @app.put("/updateAnyPatient/{patient_id}", response_model=Patient)
 async def update_patient_info(patient_id: str, patient:Patient):
     with open("patient.json", "r+") as outfile:
-            #read json from file as dict
+
+            #grab updated patient body from the put request
             update_patient_encoded = jsonable_encoder(patient)
 
+            #read json from file as dict
             db = json.load(outfile)
 
+            #update specific patient, based on patient_id 
             db[patient_id] = update_patient_encoded
 
+            #delete everything from file
             outfile.seek(0) 
             outfile.truncate()
 
@@ -178,14 +182,11 @@ async def update_patient_info(patient_id: str, patient:Patient):
  
 @app.get("/retrievePatient/{patient_id}", response_model=Patient)
 async def read_item(patient_id: str):
+    #open file
     with open("patient.json", "r+") as outfile:
 
+        #read json from file as dict
         db = json.load(outfile)
+
+        #return key value pair (or patient) with the id the user asked for
         return db[patient_id]
-
-
-# @app.get("/readFromFile")
-# def read_info():
-#     f = open('test.json')
-#     data = json.load(f) 
-#     return data
