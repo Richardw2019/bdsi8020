@@ -2,85 +2,87 @@
     "1": {
         "resourceType": "Patient",
         "active": true,
-        "id": 0,
+        "identifier": 1,
         "name": {
-            "text": "Jimmy Carter"
+            "text": "Jimmy J"
         },
         "telecom": {
             "system": "phone",
-            "value": "88"
+            "value": "8139571398"
         },
-        "gender": "string",
-        "birthdate": "YYYY-MM-DD",
+        "gender": "Male",
+        "birthDate": "2000-01-04",
         "deceasedBoolean": false,
         "address": {
-            "line": "sdf",
-            "city": "string",
-            "district": "string",
-            "state": "string",
-            "postalCode": "string",
-            "country": "string"
+            "line": "211 Kelly Rd",
+            "city": "Clemson",
+            "district": "Clemson",
+            "state": "South Carolina",
+            "postalCode": "29650",
+            "country": "Usa"
         },
+        "multipleBirthBoolean": false,
         "contact": {
-            "relationship": "string",
+            "relationship": "Mother",
             "name": {
-                "text": "string"
+                "text": "Maria G"
             },
             "telecom": {
                 "system": "phone",
-                "value": "string"
+                "value": "8139571398"
             },
             "address": {
-                "line": "string",
-                "city": "string",
-                "district": "string",
-                "state": "string",
-                "postalCode": "string",
-                "country": "string"
+                "line": "211 Kelly Rd",
+                "city": "Clemson",
+                "district": "Clemson",
+                "state": "Sc",
+                "postalCode": "29650",
+                "country": "Usa"
             },
-            "gender": "string"
+            "gender": "Female"
         }
     },
     "2": {
         "resourceType": "Patient",
         "active": true,
-        "id": 0,
+        "identifier": 1,
         "name": {
-            "text": "string"
+            "text": "Christopher J"
         },
         "telecom": {
             "system": "phone",
-            "value": "string"
+            "value": "8139571398"
         },
-        "gender": "string",
-        "birthdate": "YYYY-MM-DD",
+        "gender": "Male",
+        "birthDate": "2000-01-04",
         "deceasedBoolean": false,
         "address": {
-            "line": "string",
-            "city": "string",
-            "district": "string",
-            "state": "string",
-            "postalCode": "string",
-            "country": "string"
+            "line": "211 Kelly Rd",
+            "city": "Clemson",
+            "district": "Clemson",
+            "state": "South Carolina",
+            "postalCode": "29650",
+            "country": "Usa"
         },
+        "multipleBirthBoolean": false,
         "contact": {
-            "relationship": "string",
+            "relationship": "Mother",
             "name": {
-                "text": "string"
+                "text": "Maria G"
             },
             "telecom": {
                 "system": "phone",
-                "value": "string"
+                "value": "8139571398"
             },
             "address": {
-                "line": "string",
-                "city": "string",
-                "district": "string",
-                "state": "string",
-                "postalCode": "string",
-                "country": "string"
+                "line": "211 Kelly Rd",
+                "city": "Clemson",
+                "district": "Clemson",
+                "state": "Sc",
+                "postalCode": "29650",
+                "country": "Usa"
             },
-            "gender": "string"
+            "gender": "Female"
         }
     }
 }
