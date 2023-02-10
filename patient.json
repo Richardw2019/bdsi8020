@@ -2,9 +2,15 @@
     "1": {
         "resourceType": "Patient",
         "active": true,
-        "identifier": 1,
+        "identifier": {
+            "use": "NULL",
+            "type": "NULL",
+            "system": "NULL",
+            "value": "1",
+            "period": "NULL"
+        },
         "name": {
-            "text": "Jimmy J"
+            "text": "Richard J Garcia"
         },
         "telecom": {
             "system": "phone",
@@ -17,15 +23,15 @@
             "line": "211 Kelly Rd",
             "city": "Clemson",
             "district": "Clemson",
-            "state": "South Carolina",
-            "postalCode": "29650",
+            "state": "Sc",
+            "postalCode": "29631",
             "country": "Usa"
         },
         "multipleBirthBoolean": false,
         "contact": {
             "relationship": "Mother",
             "name": {
-                "text": "Maria G"
+                "text": "Maria Garcia"
             },
             "telecom": {
                 "system": "phone",
@@ -36,18 +42,30 @@
                 "city": "Clemson",
                 "district": "Clemson",
                 "state": "Sc",
-                "postalCode": "29650",
+                "postalCode": "29631",
                 "country": "Usa"
             },
             "gender": "Female"
-        }
+        },
+        "communication": {
+            "language": "NULL",
+            "preferred": true
+        },
+        "generalPractitioner": "Default General Practitioner",
+        "managingOrganization": "Default Managing Organization"
     },
     "2": {
         "resourceType": "Patient",
         "active": true,
-        "identifier": 1,
+        "identifier": {
+            "use": "NULL",
+            "type": "NULL",
+            "system": "NULL",
+            "value": "1",
+            "period": "NULL"
+        },
         "name": {
-            "text": "Christopher J"
+            "text": "Jimmy Garcia"
         },
         "telecom": {
             "system": "phone",
@@ -60,15 +78,15 @@
             "line": "211 Kelly Rd",
             "city": "Clemson",
             "district": "Clemson",
-            "state": "South Carolina",
-            "postalCode": "29650",
+            "state": "Sc",
+            "postalCode": "29631",
             "country": "Usa"
         },
         "multipleBirthBoolean": false,
         "contact": {
             "relationship": "Mother",
             "name": {
-                "text": "Maria G"
+                "text": "Maria Garcia"
             },
             "telecom": {
                 "system": "phone",
@@ -79,10 +97,16 @@
                 "city": "Clemson",
                 "district": "Clemson",
                 "state": "Sc",
-                "postalCode": "29650",
+                "postalCode": "29631",
                 "country": "Usa"
             },
             "gender": "Female"
-        }
+        },
+        "communication": {
+            "language": "NULL",
+            "preferred": true
+        },
+        "generalPractitioner": "Default General Practitioner",
+        "managingOrganization": "Default Managing Organization"
     }
 }

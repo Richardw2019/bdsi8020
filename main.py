@@ -1,5 +1,5 @@
 from typing import Union
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.encoders import jsonable_encoder
 from pydantic import BaseModel, Field, validator
 from pydantic.typing import Literal
@@ -7,9 +7,17 @@ from datetime import date
 import json
 import os
 
-
+#any attributes with "NULL" will not need to be changed
 
 app = FastAPI()
+
+class Identifier (BaseModel):
+    use: str = "NULL"
+    type: str = "NULL"
+    system: str = "NULL"
+    value: str = '1'
+    period: str = "NULL"
+
 
 class HumanName (BaseModel):
     text:str = Field(description = "Input the first and last name of the patient")
@@ -88,13 +96,15 @@ class Contact(BaseModel):
             raise ValueError('cannot leave string as gender')
         return v.title()
 
-
+class Communication(BaseModel):
+    language: str = "NULL"
+    preferred: bool = True
    
 
 class Patient(BaseModel):
     resourceType: str = "Patient"
     active: bool = True
-    identifier: int = 1
+    identifier: Identifier
     name: HumanName
     telecom: ContactPoint
     gender: Literal['string','male', 'female','other', 'unknown', 'Male', "Female", "Other", "Unknown"]
@@ -103,6 +113,10 @@ class Patient(BaseModel):
     address: Address
     multipleBirthBoolean: bool = False
     contact: Contact
+    communication: Communication
+
+    generalPractitioner: str = "Default General Practitioner"
+    managingOrganization: str = "Default Managing Organization"
 
 
     @validator('gender')
@@ -163,13 +177,14 @@ async def post_info(patient: Patient):
 async def update_patient_info(patient_id: str, patient:Patient):
     with open("patient.json", "r+") as outfile:
 
-            #grab updated patient body from the put request
-            update_patient_encoded = jsonable_encoder(patient)
+        #grab updated patient body from the put request
+        update_patient_encoded = jsonable_encoder(patient)
 
-            #read json from file as dict
-            db = json.load(outfile)
+        #read json from file as dict
+        db = json.load(outfile)
 
-            #update specific patient, based on patient_id 
+        #check if patient_id is in db and then add the updated patient body 
+        if patient_id in db:
             db[patient_id] = update_patient_encoded
 
             #delete everything from file
@@ -179,8 +194,13 @@ async def update_patient_info(patient_id: str, patient:Patient):
             #write to file, prettifying the json
             outfile.write(json.dumps(db, indent=4))
             return update_patient_encoded
+        
+        #return patient_id if it doesn't exist
+        else:
+            return {"patient_id": patient_id}
 
- 
+          
+                
 @app.get("/retrievePatientInfo/{patient_id}", response_model=Patient)
 async def read_item(patient_id: str):
     #open file
