@@ -218,5 +218,115 @@
         },
         "generalPractitioner": "Default General Practitioner",
         "managingOrganization": "Default Managing Organization"
+    },
+    "5": {
+        "resourceType": "Patient",
+        "active": true,
+        "identifier": {
+            "use": "NULL",
+            "type": "NULL",
+            "system": "NULL",
+            "value": "1",
+            "period": "NULL"
+        },
+        "name": {
+            "text": "James J Garcia"
+        },
+        "telecom": {
+            "system": "phone",
+            "value": "8139571398"
+        },
+        "gender": "Male",
+        "birthDate": "2000-01-04",
+        "deceasedBoolean": false,
+        "address": {
+            "line": "211 Kelly Rd",
+            "city": "Clemson",
+            "district": "Clemson",
+            "state": "Sc",
+            "postalCode": "29631",
+            "country": "Usa"
+        },
+        "multipleBirthBoolean": false,
+        "contact": {
+            "relationship": "Mother",
+            "name": {
+                "text": "Maria Garcia"
+            },
+            "telecom": {
+                "system": "phone",
+                "value": "8139571398"
+            },
+            "address": {
+                "line": "211 Kelly Rd",
+                "city": "Clemson",
+                "district": "Clemson",
+                "state": "Sc",
+                "postalCode": "29631",
+                "country": "Usa"
+            },
+            "gender": "Female"
+        },
+        "communication": {
+            "language": "NULL",
+            "preferred": true
+        },
+        "generalPractitioner": "Default General Practitioner",
+        "managingOrganization": "Default Managing Organization"
+    },
+    "6": {
+        "resourceType": "Patient",
+        "active": true,
+        "identifier": {
+            "use": "NULL",
+            "type": "NULL",
+            "system": "NULL",
+            "value": "1",
+            "period": "NULL"
+        },
+        "name": {
+            "text": "Kevin Garcia"
+        },
+        "telecom": {
+            "system": "phone",
+            "value": "string"
+        },
+        "gender": "string",
+        "birthDate": "YYYY-MM-DD",
+        "deceasedBoolean": false,
+        "address": {
+            "line": "string",
+            "city": "string",
+            "district": "string",
+            "state": "string",
+            "postalCode": "string",
+            "country": "string"
+        },
+        "multipleBirthBoolean": false,
+        "contact": {
+            "relationship": "string",
+            "name": {
+                "text": "string"
+            },
+            "telecom": {
+                "system": "phone",
+                "value": "string"
+            },
+            "address": {
+                "line": "string",
+                "city": "string",
+                "district": "string",
+                "state": "string",
+                "postalCode": "string",
+                "country": "string"
+            },
+            "gender": "string"
+        },
+        "communication": {
+            "language": "NULL",
+            "preferred": true
+        },
+        "generalPractitioner": "Default General Practitioner",
+        "managingOrganization": "Default Managing Organization"
     }
 }

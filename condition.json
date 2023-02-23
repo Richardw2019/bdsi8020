@@ -1,0 +1,173 @@
+{
+    "1": {
+        "resourceType": "Condition",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "clinicalStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "verificationStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "severity": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "A15",
+            "text": "Respiratory tuberculosis"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "subject": "1",
+        "encounter": "Reference (Encounter)",
+        "onsetDateTime": "2023-02-22",
+        "abatementDateTime": "YYYY-M-D",
+        "recordedDate": "YYYY-M-D",
+        "recorder": "Reference (Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "asserter": "Reference (Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "stage": {
+            "summary": {
+                "coding": "string",
+                "text": "string"
+            },
+            "assessment": "Reference(ClinicalImpression|DiagnosticReport|Observation)"
+        },
+        "evidence": {
+            "detail": "Reference(Any)"
+        },
+        "note": {
+            "authorString": "Richard Garcia",
+            "time": "YYYY-M-D",
+            "text": "string"
+        }
+    },
+    "2": {
+        "resourceType": "Condition",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "clinicalStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "verificationStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "severity": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "R50.9",
+            "text": "Fever, unspecified"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "subject": "2",
+        "encounter": "Reference (Encounter)",
+        "onsetDateTime": "2023-02-22",
+        "abatementDateTime": "YYYY-M-D",
+        "recordedDate": "YYYY-M-D",
+        "recorder": "Reference (Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "asserter": "Reference (Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "stage": {
+            "summary": {
+                "coding": "string",
+                "text": "string"
+            },
+            "assessment": "Reference(ClinicalImpression|DiagnosticReport|Observation)"
+        },
+        "evidence": {
+            "detail": "Reference(Any)"
+        },
+        "note": {
+            "authorString": "Richard Garcia",
+            "time": "YYYY-M-D",
+            "text": "string"
+        }
+    },
+    "3": {
+        "resourceType": "Condition",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "clinicalStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "verificationStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "severity": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "A32",
+            "text": "Listeriosis"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "subject": "DO NOT EDIT: Patient ID",
+        "encounter": "Reference (Encounter)",
+        "onsetDateTime": "2023-02-15",
+        "abatementDateTime": "YYYY-M-D",
+        "recordedDate": "YYYY-M-D",
+        "recorder": "Reference (Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "asserter": "Reference (Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "stage": {
+            "summary": {
+                "coding": "string",
+                "text": "string"
+            },
+            "assessment": "Reference(ClinicalImpression|DiagnosticReport|Observation)"
+        },
+        "evidence": {
+            "detail": "Reference(Any)"
+        },
+        "note": {
+            "authorString": "Richard Garcia",
+            "time": "2022-02-15",
+            "text": "string"
+        }
+    }
+}

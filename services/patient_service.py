@@ -1,4 +1,4 @@
-from patient_dao import PatientDao
+from daos.patient_dao import PatientDao
 
 class PatientService:
     def __init__(self):
