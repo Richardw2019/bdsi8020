@@ -8,12 +8,15 @@ import json
 import os
 from services.patient_service import PatientService
 from services.condition_service import ConditonService
+from services.observation_service import ObservationService
 from resources.patient_resources import Patient
 from resources.conditon_resources import Condition
+from resources.observation_resources import Observation
 
 
 patient_service = PatientService()
 condition_service = ConditonService()
+observation_service = ObservationService()
 
 app = FastAPI()
 
@@ -56,3 +59,21 @@ async def assign_condition(patient_id: str, condition_id: str):
 @app.get("/getPatientCondtions/{patient_id}")
 async def get_conditions(patient_id: str):
     return condition_service.get_conditions(patient_id)
+
+
+
+
+#create observation using loinc code
+@app.post("/createObservation/{search_params}", response_model=Observation)
+async def create_observation(search_params: str, observation: Observation):
+    return observation_service.create_observation(search_params, observation)
+
+#assign the created observation to a patient
+@app.put("/assignObservationToPatient/{patient_id}/{observation_id}")
+async def assign_observation(patient_id: str, observation_id: str):  
+    return observation_service.assign_observation(patient_id, observation_id)
+
+#retrieve all observations tied to a patient id
+@app.get("/getPatientObservations/{patient_id}")
+async def get_observations(patient_id: str):
+    return observation_service.get_observations(patient_id)

@@ -1,0 +1,298 @@
+{
+    "1": {
+        "resourceType": "Observation",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "basedOn": "Reference(CarePlan|DeviceRequest|ImmunizationRecommendation|MedicationRequest|NutritionOrder|ServiceRequest)",
+        "partOf": "Reference(ImagingStudy|Immunization|MedicationAdministration|MedicationDispense|MedicationStatement|Procedure)",
+        "status": "registered",
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "LP40259-1",
+            "text": "Blood pressure"
+        },
+        "subject": "1",
+        "focus": "Reference(Any)",
+        "encounter": "Reference(Encounter)",
+        "effectiveDateTime": "YYYY-M-D",
+        "performer": "Reference(CareTeam|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "valueDateTime": "YYYY-M-D",
+        "dateAbsentReason": {
+            "coding": "string",
+            "text": "string"
+        },
+        "interpretation": {
+            "coding": "string",
+            "text": "string"
+        },
+        "note": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "method": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specimen": "Reference(Specimen)",
+        "device": "Reference(Device|DeviceMetric)",
+        "referenceRange": {
+            "low": "Quantity(SimpleQuantity)",
+            "high": "Quantity(SimpleQuantity)",
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "appliesTo": {
+                "coding": "string",
+                "text": "string"
+            },
+            "age": "Range",
+            "text": "string"
+        },
+        "hasMember": "Reference(MolecularSequence|Observation|QuestionnaireResponse)",
+        "derivedFrom": "Reference(DocumentReference|ImagingStudy|Media|MolecularSequence|Observation|QuestionnaireResponse)",
+        "component": {
+            "code": {
+                "coding": "LP40259-1",
+                "text": "Blood pressure"
+            },
+            "valueDateTime": "YYYY-M-D"
+        }
+    },
+    "2": {
+        "resourceType": "Observation",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "basedOn": "Reference(CarePlan|DeviceRequest|ImmunizationRecommendation|MedicationRequest|NutritionOrder|ServiceRequest)",
+        "partOf": "Reference(ImagingStudy|Immunization|MedicationAdministration|MedicationDispense|MedicationStatement|Procedure)",
+        "status": "registered",
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "LP18015-5",
+            "text": "Weight"
+        },
+        "subject": "1",
+        "focus": "Reference(Any)",
+        "encounter": "Reference(Encounter)",
+        "effectiveDateTime": "YYYY-M-D",
+        "performer": "Reference(CareTeam|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "valueDateTime": "YYYY-M-D",
+        "dateAbsentReason": {
+            "coding": "string",
+            "text": "string"
+        },
+        "interpretation": {
+            "coding": "string",
+            "text": "string"
+        },
+        "note": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "method": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specimen": "Reference(Specimen)",
+        "device": "Reference(Device|DeviceMetric)",
+        "referenceRange": {
+            "low": "Quantity(SimpleQuantity)",
+            "high": "Quantity(SimpleQuantity)",
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "appliesTo": {
+                "coding": "string",
+                "text": "string"
+            },
+            "age": "Range",
+            "text": "string"
+        },
+        "hasMember": "Reference(MolecularSequence|Observation|QuestionnaireResponse)",
+        "derivedFrom": "Reference(DocumentReference|ImagingStudy|Media|MolecularSequence|Observation|QuestionnaireResponse)",
+        "component": {
+            "code": {
+                "coding": "LP18015-5",
+                "text": "Weight"
+            },
+            "valueDateTime": "YYYY-M-D"
+        }
+    },
+    "3": {
+        "resourceType": "Observation",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "basedOn": "Reference(CarePlan|DeviceRequest|ImmunizationRecommendation|MedicationRequest|NutritionOrder|ServiceRequest)",
+        "partOf": "Reference(ImagingStudy|Immunization|MedicationAdministration|MedicationDispense|MedicationStatement|Procedure)",
+        "status": "registered",
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "LP72681-7",
+            "text": "Height"
+        },
+        "subject": "2",
+        "focus": "Reference(Any)",
+        "encounter": "Reference(Encounter)",
+        "effectiveDateTime": "YYYY-M-D",
+        "performer": "Reference(CareTeam|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "valueDateTime": "YYYY-M-D",
+        "dateAbsentReason": {
+            "coding": "string",
+            "text": "string"
+        },
+        "interpretation": {
+            "coding": "string",
+            "text": "string"
+        },
+        "note": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "method": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specimen": "Reference(Specimen)",
+        "device": "Reference(Device|DeviceMetric)",
+        "referenceRange": {
+            "low": "Quantity(SimpleQuantity)",
+            "high": "Quantity(SimpleQuantity)",
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "appliesTo": {
+                "coding": "string",
+                "text": "string"
+            },
+            "age": "Range",
+            "text": "string"
+        },
+        "hasMember": "Reference(MolecularSequence|Observation|QuestionnaireResponse)",
+        "derivedFrom": "Reference(DocumentReference|ImagingStudy|Media|MolecularSequence|Observation|QuestionnaireResponse)",
+        "component": {
+            "code": {
+                "coding": "LP72681-7",
+                "text": "Height"
+            },
+            "valueDateTime": "YYYY-M-D"
+        }
+    },
+    "4": {
+        "resourceType": "Observation",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "basedOn": "Reference(CarePlan|DeviceRequest|ImmunizationRecommendation|MedicationRequest|NutritionOrder|ServiceRequest)",
+        "partOf": "Reference(ImagingStudy|Immunization|MedicationAdministration|MedicationDispense|MedicationStatement|Procedure)",
+        "status": "registered",
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "code": {
+            "coding": "LP36617-6",
+            "text": "Temperature"
+        },
+        "subject": "DO NOT EDIT: Patient ID",
+        "focus": "Reference(Any)",
+        "encounter": "Reference(Encounter)",
+        "effectiveDateTime": "YYYY-M-D",
+        "performer": "Reference(CareTeam|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "valueDateTime": "YYYY-M-D",
+        "dateAbsentReason": {
+            "coding": "string",
+            "text": "string"
+        },
+        "interpretation": {
+            "coding": "string",
+            "text": "string"
+        },
+        "note": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "bodySite": {
+            "coding": "string",
+            "text": "string"
+        },
+        "method": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specimen": "Reference(Specimen)",
+        "device": "Reference(Device|DeviceMetric)",
+        "referenceRange": {
+            "low": "Quantity(SimpleQuantity)",
+            "high": "Quantity(SimpleQuantity)",
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "appliesTo": {
+                "coding": "string",
+                "text": "string"
+            },
+            "age": "Range",
+            "text": "string"
+        },
+        "hasMember": "Reference(MolecularSequence|Observation|QuestionnaireResponse)",
+        "derivedFrom": "Reference(DocumentReference|ImagingStudy|Media|MolecularSequence|Observation|QuestionnaireResponse)",
+        "component": {
+            "code": {
+                "coding": "LP36617-6",
+                "text": "Temperature"
+            },
+            "valueDateTime": "YYYY-M-D"
+        }
+    }
+}
