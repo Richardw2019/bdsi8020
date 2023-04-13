@@ -1,0 +1,290 @@
+{
+    "1": {
+        "resourceType": "MedicationRequest",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "basedOn": "Reference(CarePlan|ImmunizationRecommendation|MedicationRequest|ServiceRequest)",
+        "priorPrescription": "Reference(MedicationRequest)",
+        "groupIdentifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "status": "active",
+        "statusReason": {
+            "coding": "string",
+            "text": "string"
+        },
+        "statusChanged": "YYYY-M-D",
+        "intent": "proposal",
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "priority": "routine",
+        "doNotPerform": true,
+        "medication": {
+            "concept": {
+                "coding": "161",
+                "text": "acetaminophen"
+            },
+            "reference": {
+                "reference": "string",
+                "type": "uri",
+                "display": "string"
+            }
+        },
+        "subject": "1",
+        "informationSource": "Reference(Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "encounter": "Reference(Encounter)",
+        "supportingInformation": "Reference(Any)",
+        "authoredOn": "YYYY-M-D",
+        "requester": "Reference(Device|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "reported": true,
+        "performerType": {
+            "coding": "string",
+            "text": "string"
+        },
+        "performer": "Reference(CareTeam|DeviceDefinition|HealthcareService|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "device": "CodableReferecne(DeviceDefinition)",
+        "recorder": "Reference(Practitioner|PractitionerRole)",
+        "reason": "CodeableReference(Condition|Observation)",
+        "courseOfTherapyType": {
+            "coding": "string",
+            "text": "string"
+        },
+        "insurance": "Reference(ClaimResponse|Coverage)",
+        "note": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "renderDosageInstruction": "markdown",
+        "effectiveDosePeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "dosageInstruction": {
+            "sequence": 1,
+            "text": "string",
+            "additonalInstruction": {
+                "coding": "string",
+                "text": "string"
+            },
+            "patientInstruction": "string",
+            "timing": "string",
+            "asNeeded": true,
+            "site": {
+                "coding": "string",
+                "text": "string"
+            },
+            "route": {
+                "coding": "string",
+                "text": "string"
+            },
+            "method": {
+                "coding": "string",
+                "text": "string"
+            },
+            "doseAndRate": {
+                "type": {
+                    "coding": "string",
+                    "text": "string"
+                },
+                "doseQuantity": "Quantity(SimpleQuantity)",
+                "rateQuantity": "Quantity(SimpleQuantity)"
+            },
+            "maxDosePerPeriod": {
+                "numerator": "Quantity",
+                "denominator": "Quantity(SimpleQuantity)"
+            },
+            "maxDosePerAdministration": "Quantity(SimpleQuantity)",
+            "maxDosePerLifetime": "Quantity(SimpleQuantity)"
+        },
+        "dispenseRequest": {
+            "initialFill": {
+                "quantity": "Quantity",
+                "duration": "Duration"
+            }
+        },
+        "dispenseInterval": "Duration",
+        "validityPeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "numberOfRepeatsAllowed": 1,
+        "quantity": "Quantity(SimpleQuantity)",
+        "expectedSupplyDuration": "Duration",
+        "dispenser": "Reference(Organization)",
+        "dispenserInstruction": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "doseAdministrationAid": {
+            "coding": "string",
+            "text": "string"
+        },
+        "substition": {
+            "allowedBoolean": true,
+            "reason": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "eventHistory": "Reference(Provenance)"
+    },
+    "2": {
+        "resourceType": "MedicationRequest",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "basedOn": "Reference(CarePlan|ImmunizationRecommendation|MedicationRequest|ServiceRequest)",
+        "priorPrescription": "Reference(MedicationRequest)",
+        "groupIdentifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "status": "active",
+        "statusReason": {
+            "coding": "string",
+            "text": "string"
+        },
+        "statusChanged": "YYYY-M-D",
+        "intent": "proposal",
+        "category": {
+            "coding": "string",
+            "text": "string"
+        },
+        "priority": "routine",
+        "doNotPerform": true,
+        "medication": {
+            "concept": {
+                "coding": "2551",
+                "text": "ciprofloxacin"
+            },
+            "reference": {
+                "reference": "string",
+                "type": "uri",
+                "display": "string"
+            }
+        },
+        "subject": "1",
+        "informationSource": "Reference(Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "encounter": "Reference(Encounter)",
+        "supportingInformation": "Reference(Any)",
+        "authoredOn": "YYYY-M-D",
+        "requester": "Reference(Device|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "reported": true,
+        "performerType": {
+            "coding": "string",
+            "text": "string"
+        },
+        "performer": "Reference(CareTeam|DeviceDefinition|HealthcareService|Organization|Patient|Practitioner|PractitionerRole|RelatedPerson)",
+        "device": "CodableReferecne(DeviceDefinition)",
+        "recorder": "Reference(Practitioner|PractitionerRole)",
+        "reason": "CodeableReference(Condition|Observation)",
+        "courseOfTherapyType": {
+            "coding": "string",
+            "text": "string"
+        },
+        "insurance": "Reference(ClaimResponse|Coverage)",
+        "note": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "renderDosageInstruction": "markdown",
+        "effectiveDosePeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "dosageInstruction": {
+            "sequence": 1,
+            "text": "string",
+            "additonalInstruction": {
+                "coding": "string",
+                "text": "string"
+            },
+            "patientInstruction": "string",
+            "timing": "string",
+            "asNeeded": true,
+            "site": {
+                "coding": "string",
+                "text": "string"
+            },
+            "route": {
+                "coding": "string",
+                "text": "string"
+            },
+            "method": {
+                "coding": "string",
+                "text": "string"
+            },
+            "doseAndRate": {
+                "type": {
+                    "coding": "string",
+                    "text": "string"
+                },
+                "doseQuantity": "Quantity(SimpleQuantity)",
+                "rateQuantity": "Quantity(SimpleQuantity)"
+            },
+            "maxDosePerPeriod": {
+                "numerator": "Quantity",
+                "denominator": "Quantity(SimpleQuantity)"
+            },
+            "maxDosePerAdministration": "Quantity(SimpleQuantity)",
+            "maxDosePerLifetime": "Quantity(SimpleQuantity)"
+        },
+        "dispenseRequest": {
+            "initialFill": {
+                "quantity": "Quantity",
+                "duration": "Duration"
+            }
+        },
+        "dispenseInterval": "Duration",
+        "validityPeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "numberOfRepeatsAllowed": 1,
+        "quantity": "Quantity(SimpleQuantity)",
+        "expectedSupplyDuration": "Duration",
+        "dispenser": "Reference(Organization)",
+        "dispenserInstruction": {
+            "authorString": "Author",
+            "time": "YYYY-M-D",
+            "text": "string"
+        },
+        "doseAdministrationAid": {
+            "coding": "string",
+            "text": "string"
+        },
+        "substition": {
+            "allowedBoolean": true,
+            "reason": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "eventHistory": "Reference(Provenance)"
+    }
+}

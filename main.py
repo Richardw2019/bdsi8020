@@ -9,14 +9,17 @@ import os
 from services.patient_service import PatientService
 from services.condition_service import ConditonService
 from services.observation_service import ObservationService
+from services.medication_service import MedciationService
 from resources.patient_resources import Patient
 from resources.conditon_resources import Condition
 from resources.observation_resources import Observation
+from resources.medication_resources import Medication
 
 
 patient_service = PatientService()
 condition_service = ConditonService()
 observation_service = ObservationService()
+medication_service = MedciationService()
 
 app = FastAPI()
 
@@ -77,3 +80,22 @@ async def assign_observation(patient_id: str, observation_id: str):
 @app.get("/getPatientObservations/{patient_id}")
 async def get_observations(patient_id: str):
     return observation_service.get_observations(patient_id)
+
+
+
+#create a medication request using RxNORM 
+#Used medication ciprofloxacin as test case
+#acetaminophen
+@app.post("/createMedicationRequest/{search_params}", response_model=Medication)
+async def create_medication(search_params: str, medication: Medication):
+    return medication_service.create_medication(search_params, medication)
+
+#assign created medication request to a patient
+@app.put("/assignMedicationToPatient/{patient_id}/{medication_id}")
+async def assign_medication(patient_id: str, medication_id: str):  
+    return medication_service.assign_medication(patient_id, medication_id)
+
+#retreive all medication tied to a patient using medication name
+@app.get("/getPatientMedications/{patient_id}/{medication_name}")
+async def get_medications(patient_id: str, medication_name: str):
+    return medication_service.get_medications(patient_id, medication_name)
