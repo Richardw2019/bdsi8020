@@ -80,8 +80,11 @@ class PatientDao:
             #read json from file as dict
             db = json.load(outfile)
 
-            #return key value pair (or patient) with the id the user asked for
-            return db[patient_id]
+            if patient_id not in db:
+                return "patient does not exist"
+            else:
+                #return key value pair (or patient) with the id the user asked for
+                return db[patient_id]
         
 
             

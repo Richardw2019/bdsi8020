@@ -1,0 +1,392 @@
+{
+    "1": {
+        "resourceType": "Encounter",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "status": "completed",
+        "classs": {
+            "coding": "string",
+            "text": "string"
+        },
+        "priority": {
+            "coding": "string",
+            "text": "string"
+        },
+        "type": {
+            "coding": "string",
+            "text": "string"
+        },
+        "serviceType": "Codeable Reference(HealthcareService)",
+        "subject": "1",
+        "subjectStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "episodeOfCare": "Reference(EpisodeOfCare)",
+        "basedOn": "Reference(CarePlan|DeviceRequest|MedicationRequest|ServiceRequest)",
+        "careTeam": "Reference(CareTeam)",
+        "partOf": "Reference(Encounter)",
+        "serviceProvider": "Reference(Organization)",
+        "participant": {
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "period": {
+                "start": "YYYY-M-D",
+                "end": "YYYY-M-D"
+            },
+            "actor": "Reference(Device|Group|HealthcareService|Patient|Practitioner|PractitionerRole|RelatedPerson)"
+        },
+        "appointment": "Reference(Appointment)",
+        "virtualService": {
+            "channelType": {
+                "system": "string",
+                "version": "string",
+                "code": "string",
+                "display": "string",
+                "userSelected": true
+            },
+            "addressUrl": "address",
+            "additionalInfo": "string",
+            "maxParticipants": 1,
+            "sessionKey": "string"
+        },
+        "actualPeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "plannedStartDate": "YYYY-M-D",
+        "plannedEndDate": "YYYY-M-D",
+        "length": "Duration",
+        "reason": {
+            "use": {
+                "coding": "string",
+                "text": "string"
+            },
+            "value": "CodeableReference(Condition|DiagnosticReport|ImmunizationRecommendation|Observation|Procedure)"
+        },
+        "diagnosis": {
+            "condition": "Respiratory tuberculosis",
+            "use": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "account": "Reference(Account)",
+        "dietPreference": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specialArrangement": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specialCourtsey": {
+            "coding": "string",
+            "text": "string"
+        },
+        "admission": {
+            "preAdmissionIdentifier": {
+                "use": "string",
+                "type": "string",
+                "system": "string",
+                "value": "1",
+                "period": "string",
+                "assigner": "Reference(Organization)"
+            },
+            "origin": "Reference(Location|Organization)",
+            "admitSource": {
+                "coding": "string",
+                "text": "string"
+            },
+            "reAdmission": {
+                "coding": "string",
+                "text": "string"
+            },
+            "destination": "Reference(Location|Organization)",
+            "dischargeDisposition": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "location": {
+            "location": "Reference(Location)",
+            "status": "string",
+            "form": {
+                "coding": "string",
+                "text": "string"
+            },
+            "period": {
+                "start": "YYYY-M-D",
+                "end": "YYYY-M-D"
+            }
+        }
+    },
+    "2": {
+        "resourceType": "Encounter",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "status": "completed",
+        "classs": {
+            "coding": "string",
+            "text": "string"
+        },
+        "priority": {
+            "coding": "string",
+            "text": "string"
+        },
+        "type": {
+            "coding": "string",
+            "text": "string"
+        },
+        "serviceType": "Codeable Reference(HealthcareService)",
+        "subject": "Patient ID",
+        "subjectStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "episodeOfCare": "Reference(EpisodeOfCare)",
+        "basedOn": "Reference(CarePlan|DeviceRequest|MedicationRequest|ServiceRequest)",
+        "careTeam": "Reference(CareTeam)",
+        "partOf": "Reference(Encounter)",
+        "serviceProvider": "Reference(Organization)",
+        "participant": {
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "period": {
+                "start": "YYYY-M-D",
+                "end": "YYYY-M-D"
+            },
+            "actor": "Reference(Device|Group|HealthcareService|Patient|Practitioner|PractitionerRole|RelatedPerson)"
+        },
+        "appointment": "Reference(Appointment)",
+        "virtualService": {
+            "channelType": {
+                "system": "string",
+                "version": "string",
+                "code": "string",
+                "display": "string",
+                "userSelected": true
+            },
+            "addressUrl": "address",
+            "additionalInfo": "string",
+            "maxParticipants": 1,
+            "sessionKey": "string"
+        },
+        "actualPeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "plannedStartDate": "YYYY-M-D",
+        "plannedEndDate": "YYYY-M-D",
+        "length": "Duration",
+        "reason": {
+            "use": {
+                "coding": "string",
+                "text": "string"
+            },
+            "value": "CodeableReference(Condition|DiagnosticReport|ImmunizationRecommendation|Observation|Procedure)"
+        },
+        "diagnosis": {
+            "condition": "Condition Reference",
+            "use": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "account": "Reference(Account)",
+        "dietPreference": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specialArrangement": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specialCourtsey": {
+            "coding": "string",
+            "text": "string"
+        },
+        "admission": {
+            "preAdmissionIdentifier": {
+                "use": "string",
+                "type": "string",
+                "system": "string",
+                "value": "1",
+                "period": "string",
+                "assigner": "Reference(Organization)"
+            },
+            "origin": "Reference(Location|Organization)",
+            "admitSource": {
+                "coding": "string",
+                "text": "string"
+            },
+            "reAdmission": {
+                "coding": "string",
+                "text": "string"
+            },
+            "destination": "Reference(Location|Organization)",
+            "dischargeDisposition": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "location": {
+            "location": "Reference(Location)",
+            "status": "string",
+            "form": {
+                "coding": "string",
+                "text": "string"
+            },
+            "period": {
+                "start": "YYYY-M-D",
+                "end": "YYYY-M-D"
+            }
+        }
+    },
+    "3": {
+        "resourceType": "Encounter",
+        "identifier": {
+            "use": "string",
+            "type": "string",
+            "system": "string",
+            "value": "1",
+            "period": "string",
+            "assigner": "Reference(Organization)"
+        },
+        "status": "completed",
+        "classs": {
+            "coding": "string",
+            "text": "string"
+        },
+        "priority": {
+            "coding": "string",
+            "text": "string"
+        },
+        "type": {
+            "coding": "string",
+            "text": "string"
+        },
+        "serviceType": "Codeable Reference(HealthcareService)",
+        "subject": "Patient ID",
+        "subjectStatus": {
+            "coding": "string",
+            "text": "string"
+        },
+        "episodeOfCare": "Reference(EpisodeOfCare)",
+        "basedOn": "Reference(CarePlan|DeviceRequest|MedicationRequest|ServiceRequest)",
+        "careTeam": "Reference(CareTeam)",
+        "partOf": "Reference(Encounter)",
+        "serviceProvider": "Reference(Organization)",
+        "participant": {
+            "type": {
+                "coding": "string",
+                "text": "string"
+            },
+            "period": {
+                "start": "YYYY-M-D",
+                "end": "YYYY-M-D"
+            },
+            "actor": "Reference(Device|Group|HealthcareService|Patient|Practitioner|PractitionerRole|RelatedPerson)"
+        },
+        "appointment": "Reference(Appointment)",
+        "virtualService": {
+            "channelType": {
+                "system": "string",
+                "version": "string",
+                "code": "string",
+                "display": "string",
+                "userSelected": true
+            },
+            "addressUrl": "address",
+            "additionalInfo": "string",
+            "maxParticipants": 1,
+            "sessionKey": "string"
+        },
+        "actualPeriod": {
+            "start": "YYYY-M-D",
+            "end": "YYYY-M-D"
+        },
+        "plannedStartDate": "YYYY-M-D",
+        "plannedEndDate": "YYYY-M-D",
+        "length": "Duration",
+        "reason": {
+            "use": {
+                "coding": "string",
+                "text": "string"
+            },
+            "value": "CodeableReference(Condition|DiagnosticReport|ImmunizationRecommendation|Observation|Procedure)"
+        },
+        "diagnosis": {
+            "condition": "Condition Reference",
+            "use": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "account": "Reference(Account)",
+        "dietPreference": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specialArrangement": {
+            "coding": "string",
+            "text": "string"
+        },
+        "specialCourtsey": {
+            "coding": "string",
+            "text": "string"
+        },
+        "admission": {
+            "preAdmissionIdentifier": {
+                "use": "string",
+                "type": "string",
+                "system": "string",
+                "value": "1",
+                "period": "string",
+                "assigner": "Reference(Organization)"
+            },
+            "origin": "Reference(Location|Organization)",
+            "admitSource": {
+                "coding": "string",
+                "text": "string"
+            },
+            "reAdmission": {
+                "coding": "string",
+                "text": "string"
+            },
+            "destination": "Reference(Location|Organization)",
+            "dischargeDisposition": {
+                "coding": "string",
+                "text": "string"
+            }
+        },
+        "location": {
+            "location": "Reference(Location)",
+            "status": "string",
+            "form": {
+                "coding": "string",
+                "text": "string"
+            },
+            "period": {
+                "start": "YYYY-M-D",
+                "end": "YYYY-M-D"
+            }
+        }
+    }
+}

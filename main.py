@@ -10,16 +10,18 @@ from services.patient_service import PatientService
 from services.condition_service import ConditonService
 from services.observation_service import ObservationService
 from services.medication_service import MedciationService
+from services.encounter_service import EncounterService
 from resources.patient_resources import Patient
 from resources.conditon_resources import Condition
 from resources.observation_resources import Observation
 from resources.medication_resources import Medication
-
+from resources.encounter_resources import Encounter
 
 patient_service = PatientService()
 condition_service = ConditonService()
 observation_service = ObservationService()
 medication_service = MedciationService()
+encounter_service = EncounterService()
 
 app = FastAPI()
 
@@ -34,7 +36,7 @@ async def update_patient_info(patient_id: str, patient:Patient):
     return patient_service.update_patient_info(patient_id, patient)
 
 #retrieve the information of a specific patient
-@app.get("/retrievePatientInfo/{patient_id}", response_model=Patient)
+@app.get("/retrievePatientInfo/{patient_id}")
 async def read_item(patient_id: str):
     return patient_service.get_patient_info(patient_id)
 
@@ -99,3 +101,20 @@ async def assign_medication(patient_id: str, medication_id: str):
 @app.get("/getPatientMedications/{patient_id}/{medication_name}")
 async def get_medications(patient_id: str, medication_name: str):
     return medication_service.get_medications(patient_id, medication_name)
+
+
+
+@app.post("/createEncounter")
+async def create_encounter(encounter: Encounter):
+    return encounter_service.create_encounter(encounter)
+
+@app.get("/getEncounter/{encounter_id}")
+async def get_encounter(encounter_id: str):
+    return encounter_service.get_encounter(encounter_id)
+
+@app.put("/updateEncounter/{encounter_id}/{patient_id}/{condition_id}")
+async def update_encounter(encounter_id: str, patient_id: str, condition_id: str):
+    return encounter_service.update_encounter(encounter_id, patient_id, condition_id)
+
+
+
